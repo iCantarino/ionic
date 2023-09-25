@@ -1,17 +1,29 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-menu content-id="main-content">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title>Home</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-content class="ion-padding">This is the menu content.</ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding"> <ion-card>
+    <img alt="Livro Receita" src="https://img.freepik.com/free-vector/recipe-book-concept-illustration_114360-7481.jpg" />
+    <ion-card-header>
+      <ion-card-title>Suas Receitas Mogi</ion-card-title>
+    </ion-card-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>
+    <ion-card-content>
+      As melhores receitas aqui para você!
+    </ion-card-content>
+  </ion-card> </ion-content>
+
+</div>
