@@ -1,6 +1,39 @@
+swiper-container {
+    margin-top: 2%;
+    width: 100%;
+    height: 100%;
+}
+
 swiper-slide {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+ion-card-title {
+    text-align: center;
+}
+
+#img-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ion-card-content {
+    text-align: center;
+}
+
+.receita-titulo {
+    color: white;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }

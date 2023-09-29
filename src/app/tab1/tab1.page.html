@@ -4,10 +4,14 @@
       <ion-title>Home</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content class="ion-padding">This is the menu content.</ion-content>
+  <ion-content class="ion-padding">
+    <a href="../tab1/tab1.page.html">Home</a><br><br>
+    <a href="../tab2/tab2.page.html">Envie sua Receita</a><br><br>
+    <a href="../tab3/tab3.page.html">Contato</a>
+  </ion-content>
 </ion-menu>
-<div class="ion-page" id="main-content">
-  <ion-header>
+
+ <ion-header>
     <ion-toolbar>
       <ion-buttons slot="start">
         <ion-menu-button></ion-menu-button>
@@ -15,21 +19,55 @@
       <ion-title>Home</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content class="ion-padding"> <ion-card>
-    <img alt="Livro Receita" src="https://img.freepik.com/free-vector/recipe-book-concept-illustration_114360-7481.jpg" />
-    <ion-card-header>
-      <ion-card-title>Suas Receitas Mogi</ion-card-title>
-    </ion-card-header>
 
-    <ion-card-content>
-      As melhores receitas aqui para você!
-    </ion-card-content>
-  </ion-card> </ion-content>
-  <ion-content>
-    <swiper-container>
-      <swiper-slide>Slider 1</swiper-slide>
-      <swiper-slide>Slider 2</swiper-slide>
-      <swiper-slide>Slider 3</swiper-slide>
-    </swiper-container>
-  </ion-content>
-</div>
+<ion-content>
+  <div class="ion-padding">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Suas Receitas Mogi</ion-card-title>
+      </ion-card-header>
+      <div id="img-card">
+        <img alt="Livro Receita" src="https://img.freepik.com/free-vector/recipe-book-concept-illustration_114360-7481.jpg" />
+      </div>
+      <ion-card-content>
+        As melhores receitas aqui para você!
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <swiper-container>
+      <swiper-slide>
+        <ion-card>
+          <ion-card-header>
+            <div class="receita-titulo">Strogonoff de Frango</div>
+          </ion-card-header>
+          <img src="https://pubimg.band.uol.com.br/files/56791d9fabcdd87edddb.png" alt="Strogonoff"/>
+          <ion-card-content>
+            Receita de Strogonoff!
+          </ion-card-content>      
+        </ion-card>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-card>
+          <ion-card-header>
+            <div class="receita-titulo">Feijoada</div>
+          </ion-card-header>
+          <img src="https://i.panelinha.com.br/i1/228-bk-9097-39-panelinha-12-02-200635.webp" alt="Feijoada"/>
+          <ion-card-content>
+            Receita de Feijoada!
+          </ion-card-content>      
+        </ion-card>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-card>
+          <ion-card-header>
+            <div class="receita-titulo">Lasanha</div>
+          </ion-card-header>
+          <img src="https://www.minhareceita.com.br/app/uploads/2019/09/lasanha-de-frango-2.jpg" alt="Lasanha"/>
+          <ion-card-content>
+            Receita de Lasanha!
+          </ion-card-content>      
+        </ion-card>
+      </swiper-slide>
+  </swiper-container>
+</ion-content>
